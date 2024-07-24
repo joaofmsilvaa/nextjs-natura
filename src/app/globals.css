@@ -40,38 +40,6 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
-}
 
 * {
   box-sizing: border-box;
@@ -79,29 +47,57 @@
   margin: 0;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+nav{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #ededed;
+  padding-inline: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  top: 0;
+  width: 100%;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+nav ul li{
+  padding-bottom: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+  transition: all 200ms;
+  border-bottom: 2px solid transparent;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+nav ul li:hover{
+  border-bottom: 2px solid #188a53;
+  transition: all 200ms;
+}
+
+nav img{
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+p{
+  margin-top: 1.25rem;
+}
+
+h1{
+  font-size: 3rem;
+    line-height: 1;
 }

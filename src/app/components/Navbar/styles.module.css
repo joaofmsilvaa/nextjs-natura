@@ -1,0 +1,8 @@
+.logo{
+    height: 46px;
+    width: 46px;
+}
+
+.selected{
+    border-bottom: 2px solid #137d4a;
+}
