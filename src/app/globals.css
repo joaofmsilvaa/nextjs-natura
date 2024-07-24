@@ -65,6 +65,11 @@ nav{
   top: 0;
   width: 100%;
   max-width: 1920px;
+  z-index: 100;
+}
+
+section{
+  min-height: 80vh;
 }
 
 nav ul{
@@ -106,4 +111,16 @@ p{
 h1{
   font-size: 3rem;
     line-height: 1;
+}
+
+a{
+  color: #333;
+  text-decoration: none;
+}
+
+footer{
+  padding-inline: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #ededed;
 }

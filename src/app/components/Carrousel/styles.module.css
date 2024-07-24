@@ -28,6 +28,11 @@
     width: 12px;
     background-color: #e0e0e0;
     border-radius: 15px;
+    cursor: pointer;
+}
+
+.sphere:hover{
+    background-color: #f5f5f5;
 }
 
 .sphereSelected{
@@ -35,7 +40,6 @@
     width: 12px;
     background-color: #fff;
     border-radius: 15px;
-    margin-bottom: 5px;
 }
 
 
