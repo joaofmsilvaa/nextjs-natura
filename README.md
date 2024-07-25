@@ -4,7 +4,7 @@
 
 # Natura
 
-Natura is a social media platform dedicated to showcasing the stunning beauty of nature. From breathtaking landscapes to serene sunsets, Natura allows users to share and explore the wonders of the natural world.
+Natura is a blog dedicated to showcasing the stunning beauty of nature. From breathtaking landscapes to serene sunsets, Natura allows users to explore the wonders of the natural world.
 
 ## Deploy
 

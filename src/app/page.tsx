@@ -11,23 +11,28 @@ export default function Home() {
   ];
 
   return (
-    <section className={styles.hero}>
-      <main className={styles.main}>
-        <div className={styles.heroDetails}>
-          <h1>Connecting people to the beauty of earth</h1>
-          <p className={styles.description}>
-            From breathtaking landscapes to serene sunsets, Natura allows you to
-            share and explore the wonders of the natural world.
-          </p>
-          <div className={styles.list} style={{ marginTop: "1.25rem" }}>
-            <Button message={"Explore now"} type={"primary"} />
-            <Button message={"Learn more"} type={"secondary"} />
+    <>
+      <section className={styles.hero}>
+        <main className={styles.main}>
+          <div className={styles.heroDetails}>
+            <h1>Connecting people to the beauty of earth</h1>
+            <p className={styles.description}>
+              From breathtaking landscapes to serene sunsets, Natura allows you
+              to explore the wonders of the natural world.
+            </p>
+            <div className={styles.list} style={{ marginTop: "1.25rem" }}>
+              <Button message={"Explore now"} type={"primary"} />
+              <Button message={"Learn more"} type={"secondary"} />
+            </div>
           </div>
-        </div>
-        <div className={styles.heroCarrousel}>
-          <Carrousel imageArr={imageArr}/>
-        </div>
-      </main>
-    </section>
+          <div className={styles.heroCarrousel}>
+            <Carrousel imageArr={imageArr} />
+          </div>
+        </main>
+      </section>
+      <section>
+        <h2></h2>
+      </section>
+    </>
   );
 }
